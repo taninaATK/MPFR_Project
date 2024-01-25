@@ -5,7 +5,7 @@
 */
 
 Pour compiler : make
-Autres commande utile au besoin : make clean
+Aussi : make clean
 
 Paramètre d'exécution :
 ./ver_double d n min max epsilon
