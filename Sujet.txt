@@ -1,0 +1,18 @@
+Show that if Q is an orthogonal matrix, then QAQ⋆ has the same eigenvalues as the n×n-matrix A
+
+Show that there exists a rotation matrix Gn−1,n
+such that both Gn−1,nA and A′=Gn−1,nAG⋆n−1,n have a 0 coefficient in position (n,1)
+
+Show that, likewise, we can pick a rotation matrix Gn−2,n−1
+such that A′′=Gn−2,n−1A′G⋆n−2,n−1 also has a 0 coefficient in position (n−1,1)
+
+Show that we can now pick another rotation matrix G′n−1,n
+such that A′′′=G′n−1,nA′′G′⋆n−1,n also has a 0 coefficient in position (n,2)
+
+Propose an algorithm that makes A upper Hessenberg, i.e. with 0 under the first subdiagonal (in positions (i,j)
+with i>j+1).
+
+Using the language C, implement the above algorithm and Given's classical algorithm.
+Use Given's algorithm to build the sequence of matrices A0=A and for all i≥0, Ai+1=QAiQ⋆. Stop this recursive algorithm when the coefficients of the subdiagonal of Ai are smaller than a threshold.
+
+Compare the efficiency and the quality of the computed eigenvalues of A using this method over double-precision floating-point numbers and MPFR ones.
